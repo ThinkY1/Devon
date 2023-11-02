@@ -1,6 +1,8 @@
 import './App.css';
 import Textfields from './textComponent.js';
 import FormButton from './button.js';
+import AddEditKpiTextboxJSON from './textComponent.js';
+import jsonData from './JsonTextBoxData';
 
 
 // export default function Header() {
@@ -18,19 +20,21 @@ import FormButton from './button.js';
 //   </>
 //   );
 const App = () => {
-  const jsonData = [
-    {id:1, label: 'Team'},
-    {id:2, label: 'Sprint'},
-    {id:3, label: 'Sprint End'}
-  ];
+  
 
   return (
     <>
     <div>
       <h1>Dev Central</h1>
-      <Textfields data={jsonData} />
+      {jsonData.map((item) => (
+        <AddEditKpiTextboxJSON 
+            key = {item.id}
+            item = {item}
+        />
+      ))}
+     
     </div>
-
+    
     <div>
       <FormButton buttonName="Back"/>
       <FormButton buttonName="Save"/>

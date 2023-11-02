@@ -1,0 +1,9 @@
+[
+  { "id": 1, "leftLabel": "Team*" },
+  { "id": 2, "leftLabel": "Sprint End" },
+  { "id": 3, "leftLabel": "Sprint name" },
+  { "id": 4, "leftLabel": "Sprint result" },
+  { "id": 5, "leftLabel": "Reliability", "rightLabel": "%" },
+  { "id": 6, "leftLabel": "Demo rating", "rightLabel": "(1 to 5)" },
+  { "id": 7, "leftLabel": "Impact Score", "rightLabel": "(1 to 5)" }
+]
