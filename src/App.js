@@ -1,8 +1,11 @@
 import './App.css';
 import Textfields from './textComponent.js';
-import FormButton from './button.js';
+import FormButton from './button';
 import AddEditKpiTextboxJSON from './textComponent.js';
-import jsonData from './JsonTextBoxData';
+import jsonData from './JsonTextBoxData.json';
+import { SprintSummary } from './SummaryTable';
+import KPIForm from './Form.js';
+
 
 
 // export default function Header() {
@@ -19,12 +22,22 @@ import jsonData from './JsonTextBoxData';
   
 //   </>
 //   );
-const App = () => {
-  
 
+
+const App = () => {
   return (
     <>
-    <div>
+    {
+      <div>
+        <KPIForm/>
+        <SprintSummary/>
+      </div>
+
+
+     }
+     </>
+    
+    /* <div>
       <h1>Dev Central</h1>
       {jsonData.map((item) => (
         <AddEditKpiTextboxJSON 
@@ -36,11 +49,23 @@ const App = () => {
     </div>
     
     <div>
+      <br>
+
+      </br>
       <FormButton buttonName="Back"/>
       <FormButton buttonName="Save"/>
     </div>
-    </>
 
+         <div className="summaryTable"> 
+    <SprintSummary/>
+    </div> 
+    
+*/
+
+    
+    
+    
+    
   );
 };
 
